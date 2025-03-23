@@ -12,19 +12,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Oxitech"
         tools:targetApi="31">
+
+        <activity
+            android:name=".openui.SecondActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Splash" />
+
+        <activity
+            android:name=".openui.FirstActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Splash" />
+
         <activity
             android:name=".other.SplashActivity"
-            android:theme="@style/Theme.Splash"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".MainActivity"
-            android:exported="false"/>
+            android:exported="false" />
 
         <meta-data
             android:name="preloaded_fonts"
@@ -32,3 +44,6 @@
     </application>
 
 </manifest>
+
+
+<!--    https://chatgpt.com/share/67d860a0-3544-8012-b818-ea814b7a963b-->
