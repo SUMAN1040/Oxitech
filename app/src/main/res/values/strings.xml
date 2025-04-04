@@ -3,4 +3,10 @@
     <string name="title_home">Home</string>
     <string name="title_analysis">Analysis</string>
     <string name="title_account">Account</string>
+    <string name="title_activity_map">MapActivity</string>
+
+
+<!--    Add On-->
+    <string name="default_notification_channel_id">default_channel</string>
+
 </resources>

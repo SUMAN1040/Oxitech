@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".other.Permission">
+
+    <!-- Instruction Text -->
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="159dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/oxiimg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Location Permission Checkbox -->
+    <TextView
+        android:id="@+id/instructionText"
+        android:layout_width="358dp"
+        android:layout_height="78dp"
+        android:gravity="center"
+        android:text="We need some additional details so that Oxitech can help you in case of emergency."
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImage" />
+
+    <!-- Phone Calls Permission Checkbox -->
+    <CheckBox
+        android:id="@+id/checkbox_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Allow Oxitech to access your location"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instructionText" />
+
+    <!-- Grant Location Access Button -->
+    <Button
+        android:id="@+id/button_location"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_200"
+        android:elevation="100dp"
+        android:text="Grant Location Access"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_location" />
+
+
+    <CheckBox
+        android:id="@+id/checkbox_calls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable phone calls"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_location" />
+
+    <!-- Grant Call Enabler Button -->
+    <Button
+        android:id="@+id/button_calls"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_200"
+        android:elevation="100dp"
+        android:text="Grant Call Enabler"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_calls" />
+
+    <!-- Push Notifications Checkbox -->
+    <CheckBox
+        android:id="@+id/checkbox_push"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activate push messages"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_calls" />
+
+    <!-- Grant Notifications Sender Button -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_200"
+        android:elevation="100dp"
+        android:text="Grant Notifications"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_push" />
+
+    <!-- Phone Number Input -->
+
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:background="#F6F3F3"
+        android:gravity="center"
+        android:hint="Enter your phone number"
+        android:inputType="phone"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/goButton"
+        android:layout_width="84dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFCB33"
+        android:gravity="center"
+        android:text="Send"
+        app:cornerRadius="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toEndOf="@+id/phone_number"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <EditText
+        android:id="@+id/otp_input"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#F6F3F3"
+        android:gravity="center"
+        android:hint="Enter OTP"
+        android:inputType="number"
+        android:maxLength="10"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.218"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_number" />
+
+    <!-- Accept and Finish Button -->
+    <Button
+        android:id="@+id/button_finish"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF0000"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="Accept terms and conditions and finish"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otp_input"
+        app:layout_constraintVertical_bias="0.823" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

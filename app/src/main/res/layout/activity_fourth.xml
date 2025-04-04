@@ -15,7 +15,7 @@
             android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="631dp"
-            android:background="@drawable/background2"
+            android:background="@drawable/fourth_bg"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -27,7 +27,7 @@
             android:layout_height="57dp"
             android:layout_marginTop="30dp"
             android:fontFamily="monospace"
-            android:text="1. In case of emergency launch SOS call for help"
+            android:text="3. App calls the emergency services"
             android:textColor="@color/black"
             android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -36,7 +36,7 @@
             app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/nav_second"
+            android:id="@+id/nav_fourth"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:background="#518CEB"

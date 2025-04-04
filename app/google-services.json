@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "698841961080",
+    "project_id": "oxitech-1dd34",
+    "storage_bucket": "oxitech-1dd34.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698841961080:android:f473bb9b54a3321def938d",
+        "android_client_info": {
+          "package_name": "com.example.oxitech"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSBjxuA3eL1hOwl3FWVc3lzWSsy-I2im8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

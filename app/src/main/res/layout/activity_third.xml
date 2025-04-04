@@ -15,9 +15,10 @@
             android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="631dp"
-            android:background="@drawable/background2"
+            android:background="@drawable/third_background"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,7 +28,7 @@
             android:layout_height="57dp"
             android:layout_marginTop="30dp"
             android:fontFamily="monospace"
-            android:text="1. In case of emergency launch SOS call for help"
+            android:text="2. App sends your location to oxitech.com"
             android:textColor="@color/black"
             android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -36,7 +37,7 @@
             app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/nav_second"
+            android:id="@+id/nav_third"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:background="#518CEB"

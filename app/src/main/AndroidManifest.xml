@@ -2,6 +2,24 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+
+
+
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+
+
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,16 +31,46 @@
         android:theme="@style/Theme.Oxitech"
         tools:targetApi="31">
 
+
+
+
+
+        <activity
+            android:name=".other.Permission"
+            android:exported="false"
+            android:theme="@style/Theme.Splash"/>
+        <activity
+            android:name=".login.LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SingupLoginRealtime"/>
+        <activity
+            android:name=".login.SignupActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SingupLoginRealtime"/>
+        <activity
+            android:name=".openui.SixthActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Splash" />
+        <activity
+            android:name=".openui.FifthActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Splash" />
+        <activity
+            android:name=".openui.FourthActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Splash" />
+        <activity
+            android:name=".openui.ThirdActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Splash" />
         <activity
             android:name=".openui.SecondActivity"
             android:exported="false"
             android:theme="@style/Theme.Splash" />
-
         <activity
             android:name=".openui.FirstActivity"
             android:exported="false"
             android:theme="@style/Theme.Splash" />
-
         <activity
             android:name=".other.SplashActivity"
             android:exported="true"
@@ -41,9 +89,12 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id"/>
+
     </application>
 
 </manifest>
-
-
-<!--    https://chatgpt.com/share/67d860a0-3544-8012-b818-ea814b7a963b-->

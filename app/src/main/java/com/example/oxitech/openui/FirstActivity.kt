@@ -7,6 +7,7 @@ import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.oxitech.R
+import com.example.oxitech.login.SignupActivity
 
 class FirstActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,10 +26,10 @@ class FirstActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-//        firstButton2.setOnClickListener {
-//            // Add action for "Start now" button
-//            val intent = Intent(this, MainActivity::class.java)
-//            startActivity(intent)
-//        }
+        firstButton2.setOnClickListener {
+            // Add action for "Start now" button
+            val intent = Intent(this, SignupActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
