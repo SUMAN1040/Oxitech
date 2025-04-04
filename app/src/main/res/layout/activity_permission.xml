@@ -8,7 +8,6 @@
     tools:context=".other.Permission">
 
     <!-- Instruction Text -->
-
     <ImageView
         android:id="@+id/logoImage"
         android:layout_width="159dp"
@@ -20,7 +19,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Location Permission Checkbox -->
     <TextView
         android:id="@+id/instructionText"
         android:layout_width="358dp"
@@ -34,12 +32,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logoImage" />
 
-    <!-- Phone Calls Permission Checkbox -->
-    <CheckBox
+    <!-- Location Permission Checkbox -->
+    <RadioButton
         android:id="@+id/checkbox_location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="40dp"
         android:text="Allow Oxitech to access your location"
         android:textColor="@color/black"
         android:textSize="16sp"
@@ -62,8 +60,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkbox_location" />
 
-
-    <CheckBox
+    <!-- Phone Calls Permission Checkbox -->
+    <RadioButton
         android:id="@+id/checkbox_calls"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -89,7 +87,7 @@
         app:layout_constraintTop_toBottomOf="@+id/checkbox_calls" />
 
     <!-- Push Notifications Checkbox -->
-    <CheckBox
+    <RadioButton
         android:id="@+id/checkbox_push"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -103,7 +101,7 @@
 
     <!-- Grant Notifications Sender Button -->
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_notifications"
         android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/teal_200"
@@ -116,50 +114,47 @@
         app:layout_constraintTop_toBottomOf="@+id/checkbox_push" />
 
     <!-- Phone Number Input -->
-
     <EditText
         android:id="@+id/phone_number"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
         android:background="#F6F3F3"
         android:gravity="center"
         android:hint="Enter your phone number"
         android:inputType="phone"
-        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/goButton"
+        app:layout_constraintHorizontal_bias="0.846"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/button_notifications" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/goButton"
         android:layout_width="84dp"
         android:layout_height="40dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
         android:backgroundTint="#FFCB33"
         android:gravity="center"
         android:text="Send"
         app:cornerRadius="56dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.344"
-        app:layout_constraintStart_toEndOf="@+id/phone_number"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/button_notifications" />
 
     <EditText
         android:id="@+id/otp_input"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:background="#F6F3F3"
         android:gravity="center"
         android:hint="Enter OTP"
         android:inputType="number"
-        android:maxLength="10"
+        android:maxLength="4"
         android:textColor="@color/black"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.218"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/phone_number"
+        app:layout_constraintStart_toStartOf="@+id/phone_number"
         app:layout_constraintTop_toBottomOf="@+id/phone_number" />
 
     <!-- Accept and Finish Button -->
@@ -177,6 +172,6 @@
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/otp_input"
-        app:layout_constraintVertical_bias="0.823" />
+        app:layout_constraintVertical_bias="0.866" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
